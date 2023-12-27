@@ -15,9 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/v1/movies")
 public class MovieControllers {
     @GetMapping
-    public ResponseEntity<String> allMovies(){
+    public ResponseEntity<String> getAllMovies(){
         return new ResponseEntity<String>("All Movies!", HttpStatus.OK);
     }
 
 }
- 
