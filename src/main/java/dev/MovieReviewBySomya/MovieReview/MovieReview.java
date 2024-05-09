@@ -16,16 +16,23 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Movie {
+public class MovieReview {
     //here this "@Id" will reperenst id of movies in this class
     @Id
     private ObjectId id;
+
     private String imdbId;
+    
     private String title;
+    
     private String releaseDate;
+    
     private String trailerLink;
+    
     private String poster;
+    
     private List<String> geners;
+    
     private List<String> backdrops;
     //here this "Reviews" is Reviwe.java file, this "@DocumentRefernce" will make sure that here in this "Movie.java" fill's
     // private List<Reviews> reviewIds will hold only ids of the reviwes and the actual reviwe lines will me saved in "Reviwes.java" file

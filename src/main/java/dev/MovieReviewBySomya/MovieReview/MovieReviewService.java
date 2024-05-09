@@ -4,11 +4,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
 @Service
-public class MovieService {
+public class MovieReviewService {
     @Autowired
-    private MovieRepository movieRepository;
+    private MovieReviewRepository movieRepository;
     //Database access methods
-    public List<Movie> allMovies(){
+    public List<MovieReview> allMovies(){
         return movieRepository.findAll();
     }
 }
