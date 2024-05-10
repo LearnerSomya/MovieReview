@@ -8,7 +8,7 @@ public class MovieReviewService {
     @Autowired
     private MovieReviewRepository movieRepository;
     //Database access methods
-    public List<MovieReview> allMovies(){
+    public List<MovieReview> getAllMovies(){
         return movieRepository.findAll();
     }
 }
