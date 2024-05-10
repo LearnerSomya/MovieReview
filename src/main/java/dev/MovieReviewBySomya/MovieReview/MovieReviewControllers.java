@@ -25,7 +25,6 @@ public class MovieReviewControllers {
         
     // }
     public ResponseEntity<String> getAllMovies(){
-
         return new ResponseEntity<String>("All Movies!", HttpStatus.OK);
     }
 
