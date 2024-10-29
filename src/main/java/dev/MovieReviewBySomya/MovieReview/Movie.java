@@ -1,5 +1,4 @@
 package dev.MovieReviewBySomya.MovieReview;
-
 import java.util.List;
 
 import org.bson.types.ObjectId;
@@ -12,11 +11,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 //this is a class,
-@Document(collation = "movies")
+@Document(collection = "movies")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class MovieReview {
+public class Movie {
     //here this "@Id" will reperenst id of movies in this class
     @Id
     private ObjectId id;
@@ -38,4 +37,5 @@ public class MovieReview {
     // private List<Reviews> reviewIds will hold only ids of the reviwes and the actual reviwe lines will me saved in "Reviwes.java" file
     @DocumentReference
     private List<Reviews> reviewIds;
+
 }

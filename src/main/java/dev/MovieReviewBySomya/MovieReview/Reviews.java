@@ -1,6 +1,6 @@
 package dev.MovieReviewBySomya.MovieReview;
 
-import java.rmi.server.ObjID;
+//import java.rmi.server.ObjID;
 
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
@@ -15,8 +15,14 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Reviews {
+
     @Id
     private ObjectId id;
 
     private String body;
+    
+    //customConstructor
+    public Reviews(String body){
+        this.body = body;
+    }
 }
